@@ -40,18 +40,16 @@
             this.menu_stop = new System.Windows.Forms.Button();
             this.menu_cancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.CurrentGameGroup = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.CurrentGameGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.btnReset.Location = new System.Drawing.Point(91, 25);
+            this.btnReset.Location = new System.Drawing.Point(192, 39);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(83, 27);
             this.btnReset.TabIndex = 0;
@@ -62,7 +60,7 @@
             // btnCommand2
             // 
             this.btnCommand2.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.btnCommand2.Location = new System.Drawing.Point(2, 25);
+            this.btnCommand2.Location = new System.Drawing.Point(103, 39);
             this.btnCommand2.Name = "btnCommand2";
             this.btnCommand2.Size = new System.Drawing.Size(83, 26);
             this.btnCommand2.TabIndex = 1;
@@ -73,7 +71,7 @@
             // btnCommand1
             // 
             this.btnCommand1.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.btnCommand1.Location = new System.Drawing.Point(180, 24);
+            this.btnCommand1.Location = new System.Drawing.Point(-4, 36);
             this.btnCommand1.Name = "btnCommand1";
             this.btnCommand1.Size = new System.Drawing.Size(83, 29);
             this.btnCommand1.TabIndex = 2;
@@ -83,7 +81,7 @@
             // 
             // lblNumber
             // 
-            this.lblNumber.Location = new System.Drawing.Point(148, 92);
+            this.lblNumber.Location = new System.Drawing.Point(142, 107);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(47, 16);
             this.lblNumber.TabIndex = 3;
@@ -91,7 +89,7 @@
             // 
             // lblGoal
             // 
-            this.lblGoal.Location = new System.Drawing.Point(201, 70);
+            this.lblGoal.Location = new System.Drawing.Point(142, 85);
             this.lblGoal.Name = "lblGoal";
             this.lblGoal.Size = new System.Drawing.Size(62, 27);
             this.lblGoal.TabIndex = 4;
@@ -100,7 +98,7 @@
             // 
             // lblGoalText
             // 
-            this.lblGoalText.Location = new System.Drawing.Point(19, 70);
+            this.lblGoalText.Location = new System.Drawing.Point(13, 85);
             this.lblGoalText.Name = "lblGoalText";
             this.lblGoalText.Size = new System.Drawing.Size(96, 27);
             this.lblGoalText.TabIndex = 5;
@@ -109,7 +107,7 @@
             // 
             // lblStepsCount
             // 
-            this.lblStepsCount.Location = new System.Drawing.Point(148, 119);
+            this.lblStepsCount.Location = new System.Drawing.Point(142, 134);
             this.lblStepsCount.Name = "lblStepsCount";
             this.lblStepsCount.Size = new System.Drawing.Size(45, 19);
             this.lblStepsCount.TabIndex = 6;
@@ -151,39 +149,26 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.CurrentGameGroup);
+            this.panel1.Controls.Add(this.lblGoalText);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnCommand2);
+            this.panel1.Controls.Add(this.lblGoal);
             this.panel1.Controls.Add(this.menu_cancel);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnReset);
+            this.panel1.Controls.Add(this.lblNumber);
             this.panel1.Controls.Add(this.menu_stop);
+            this.panel1.Controls.Add(this.lblStepsCount);
             this.panel1.Controls.Add(this.menu_start);
+            this.panel1.Controls.Add(this.btnCommand1);
             this.panel1.Location = new System.Drawing.Point(12, 14);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 199);
             this.panel1.TabIndex = 7;
             // 
-            // CurrentGameGroup
-            // 
-            this.CurrentGameGroup.BackColor = System.Drawing.Color.PowderBlue;
-            this.CurrentGameGroup.Controls.Add(this.btnCommand2);
-            this.CurrentGameGroup.Controls.Add(this.label2);
-            this.CurrentGameGroup.Controls.Add(this.btnReset);
-            this.CurrentGameGroup.Controls.Add(this.label1);
-            this.CurrentGameGroup.Controls.Add(this.lblStepsCount);
-            this.CurrentGameGroup.Controls.Add(this.btnCommand1);
-            this.CurrentGameGroup.Controls.Add(this.lblNumber);
-            this.CurrentGameGroup.Controls.Add(this.lblGoal);
-            this.CurrentGameGroup.Controls.Add(this.lblGoalText);
-            this.CurrentGameGroup.Location = new System.Drawing.Point(4, 47);
-            this.CurrentGameGroup.Name = "CurrentGameGroup";
-            this.CurrentGameGroup.Size = new System.Drawing.Size(327, 149);
-            this.CurrentGameGroup.TabIndex = 13;
-            this.CurrentGameGroup.TabStop = false;
-            this.CurrentGameGroup.Text = "текущая игра";
-            this.CurrentGameGroup.VisibleChanged += new System.EventHandler(this.menuStart_Click);
-            this.CurrentGameGroup.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(47, 119);
+            this.label2.Location = new System.Drawing.Point(41, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 12;
@@ -191,7 +176,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(19, 92);
+            this.label1.Location = new System.Drawing.Point(13, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 27);
             this.label1.TabIndex = 11;
@@ -200,9 +185,9 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(16, 231);
+            this.panel2.Location = new System.Drawing.Point(16, 235);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(599, 264);
+            this.panel2.Size = new System.Drawing.Size(599, 260);
             this.panel2.TabIndex = 8;
             // 
             // Form1
@@ -217,13 +202,10 @@
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.CurrentGameGroup.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
         private System.Windows.Forms.Panel panel2;
-
-        private System.Windows.Forms.GroupBox CurrentGameGroup;
 
         private System.Windows.Forms.Label label2;
 

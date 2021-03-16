@@ -31,7 +31,6 @@ namespace Homework_7
             this.Text = "Удвоитель";
             lblGoal.Visible = false;
             lblGoalText.Visible = false;
-            //CurrentGameGroup.Visible = false;
             lblStepsCount.Text = "0";
             
             // Task2
@@ -91,7 +90,6 @@ namespace Homework_7
         {
             doubler.GetGoal();
             MessageBox.Show($"Получите значение: {doubler.Goal}");
-            CurrentGameGroup.Visible = true;
             lblGoal.Visible = true;
             lblGoalText.Visible = true;
             lblGoal.Text = doubler.Goal.ToString();
@@ -103,7 +101,6 @@ namespace Homework_7
         private void menuStop_Click(object sender, EventArgs e)
         {
             MessageBox.Show("СТОП ИГРА!");
-            CurrentGameGroup.Visible = false;
             lblGoal.Visible = false;
             lblGoalText.Visible = false;
         }
@@ -150,7 +147,7 @@ namespace Homework_7
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
         
         
