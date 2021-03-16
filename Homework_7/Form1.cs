@@ -16,6 +16,10 @@ namespace Homework_7
     public partial class Form1 : Form
     {
        Doubler doubler;
+       
+       // Task 2
+       GuessNumber rnum;
+       int max;
         public Form1()
         {
             doubler = new Doubler();
@@ -27,7 +31,21 @@ namespace Homework_7
             this.Text = "Удвоитель";
             lblGoal.Visible = false;
             lblGoalText.Visible = false;
+            //CurrentGameGroup.Visible = false;
             lblStepsCount.Text = "0";
+            
+            // Task2
+            
+            max = 100;
+            rnum = new GuessNumber(max);
+            InitializeComponent();
+            // btnCheck.Text = "Проверить";
+            // this.Text = "Угадай число";
+            // lblStepCount.Text = "0";
+            // lblEnterTheNumber.Text = $"Введите число от 0 до {max}:";
+            // lblStepText.Text = "Счёт ходов:";
+            // MessageBox.Show("Вводите в поле число пока не угадаете. Нажимайте кнопку \"Проверить\" " +
+            //                 "чтобы узнать результат попытки. ", "Правила");
         }
 
         //Обновление формы
@@ -73,6 +91,7 @@ namespace Homework_7
         {
             doubler.GetGoal();
             MessageBox.Show($"Получите значение: {doubler.Goal}");
+            CurrentGameGroup.Visible = true;
             lblGoal.Visible = true;
             lblGoalText.Visible = true;
             lblGoal.Text = doubler.Goal.ToString();
@@ -84,6 +103,7 @@ namespace Homework_7
         private void menuStop_Click(object sender, EventArgs e)
         {
             MessageBox.Show("СТОП ИГРА!");
+            CurrentGameGroup.Visible = false;
             lblGoal.Visible = false;
             lblGoalText.Visible = false;
         }
@@ -132,6 +152,27 @@ namespace Homework_7
         {
             throw new System.NotImplementedException();
         }
+        
+        
+        // private void btnCheck_Click(object sender, EventArgs e)
+        // {
+        //     bool check;
+        //     MessageBox.Show(rnum.CheckValue(out check, int.Parse(tboxUserAnswer.Text)));
+        //     if (check)
+        //     {
+        //         rnum.Reset(max);
+        //         MessageBox.Show($"Игра началась заново.\nВведите число от 0 до {max}:");
+        //     }
+        //     Update1();
+        // }
+        //
+        // void Update1()
+        // {
+        //     lblStepCount.Text = rnum.Steps.ToString();
+        //     this.Refresh();
+        // }
+        //
+        
     }
 }
 

@@ -40,11 +40,12 @@
             this.menu_stop = new System.Windows.Forms.Button();
             this.menu_cancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CurrentGameGroup = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.CurrentGameGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -82,15 +83,15 @@
             // 
             // lblNumber
             // 
-            this.lblNumber.Location = new System.Drawing.Point(122, 90);
+            this.lblNumber.Location = new System.Drawing.Point(148, 92);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(47, 38);
+            this.lblNumber.Size = new System.Drawing.Size(47, 16);
             this.lblNumber.TabIndex = 3;
             this.lblNumber.Text = "0";
             // 
             // lblGoal
             // 
-            this.lblGoal.Location = new System.Drawing.Point(105, 63);
+            this.lblGoal.Location = new System.Drawing.Point(201, 70);
             this.lblGoal.Name = "lblGoal";
             this.lblGoal.Size = new System.Drawing.Size(62, 27);
             this.lblGoal.TabIndex = 4;
@@ -99,7 +100,7 @@
             // 
             // lblGoalText
             // 
-            this.lblGoalText.Location = new System.Drawing.Point(3, 63);
+            this.lblGoalText.Location = new System.Drawing.Point(19, 70);
             this.lblGoalText.Name = "lblGoalText";
             this.lblGoalText.Size = new System.Drawing.Size(96, 27);
             this.lblGoalText.TabIndex = 5;
@@ -108,77 +109,81 @@
             // 
             // lblStepsCount
             // 
-            this.lblStepsCount.Location = new System.Drawing.Point(114, 128);
+            this.lblStepsCount.Location = new System.Drawing.Point(148, 119);
             this.lblStepsCount.Name = "lblStepsCount";
-            this.lblStepsCount.Size = new System.Drawing.Size(45, 22);
+            this.lblStepsCount.Size = new System.Drawing.Size(45, 19);
             this.lblStepsCount.TabIndex = 6;
             this.lblStepsCount.Text = "0";
             this.lblStepsCount.Click += new System.EventHandler(this.label3_Click);
             // 
             // menu_start
             // 
+            this.menu_start.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
             this.menu_start.Location = new System.Drawing.Point(3, 0);
             this.menu_start.Name = "menu_start";
             this.menu_start.Size = new System.Drawing.Size(76, 25);
             this.menu_start.TabIndex = 8;
             this.menu_start.Text = "Старт";
-            this.menu_start.UseVisualStyleBackColor = true;
+            this.menu_start.UseVisualStyleBackColor = false;
             this.menu_start.Click += new System.EventHandler(this.menuStart_Click);
             // 
             // menu_stop
             // 
+            this.menu_stop.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
             this.menu_stop.Location = new System.Drawing.Point(93, -1);
             this.menu_stop.Name = "menu_stop";
             this.menu_stop.Size = new System.Drawing.Size(76, 27);
             this.menu_stop.TabIndex = 9;
             this.menu_stop.Text = "Стоп";
-            this.menu_stop.UseVisualStyleBackColor = true;
+            this.menu_stop.UseVisualStyleBackColor = false;
             this.menu_stop.Click += new System.EventHandler(this.menuStop_Click);
             // 
             // menu_cancel
             // 
+            this.menu_cancel.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
             this.menu_cancel.Location = new System.Drawing.Point(182, -1);
             this.menu_cancel.Name = "menu_cancel";
             this.menu_cancel.Size = new System.Drawing.Size(106, 26);
             this.menu_cancel.TabIndex = 10;
             this.menu_cancel.Text = "Отменить шаг";
-            this.menu_cancel.UseVisualStyleBackColor = true;
+            this.menu_cancel.UseVisualStyleBackColor = false;
             this.menu_cancel.Click += new System.EventHandler(this.menuCancel_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.CurrentGameGroup);
             this.panel1.Controls.Add(this.menu_cancel);
             this.panel1.Controls.Add(this.menu_stop);
             this.panel1.Controls.Add(this.menu_start);
-            this.panel1.Controls.Add(this.lblStepsCount);
-            this.panel1.Controls.Add(this.lblGoalText);
-            this.panel1.Controls.Add(this.lblGoal);
-            this.panel1.Controls.Add(this.lblNumber);
             this.panel1.Location = new System.Drawing.Point(12, 14);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 324);
+            this.panel1.Size = new System.Drawing.Size(603, 199);
             this.panel1.TabIndex = 7;
             // 
-            // groupBox1
+            // CurrentGameGroup
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.PowderBlue;
-            this.groupBox1.Controls.Add(this.btnCommand2);
-            this.groupBox1.Controls.Add(this.btnReset);
-            this.groupBox1.Controls.Add(this.btnCommand1);
-            this.groupBox1.Location = new System.Drawing.Point(243, 123);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(275, 64);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.CurrentGameGroup.BackColor = System.Drawing.Color.PowderBlue;
+            this.CurrentGameGroup.Controls.Add(this.btnCommand2);
+            this.CurrentGameGroup.Controls.Add(this.label2);
+            this.CurrentGameGroup.Controls.Add(this.btnReset);
+            this.CurrentGameGroup.Controls.Add(this.label1);
+            this.CurrentGameGroup.Controls.Add(this.lblStepsCount);
+            this.CurrentGameGroup.Controls.Add(this.btnCommand1);
+            this.CurrentGameGroup.Controls.Add(this.lblNumber);
+            this.CurrentGameGroup.Controls.Add(this.lblGoal);
+            this.CurrentGameGroup.Controls.Add(this.lblGoalText);
+            this.CurrentGameGroup.Location = new System.Drawing.Point(4, 47);
+            this.CurrentGameGroup.Name = "CurrentGameGroup";
+            this.CurrentGameGroup.Size = new System.Drawing.Size(327, 149);
+            this.CurrentGameGroup.TabIndex = 13;
+            this.CurrentGameGroup.TabStop = false;
+            this.CurrentGameGroup.Text = "текущая игра";
+            this.CurrentGameGroup.VisibleChanged += new System.EventHandler(this.menuStart_Click);
+            this.CurrentGameGroup.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(14, 123);
+            this.label2.Location = new System.Drawing.Point(47, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 12;
@@ -186,29 +191,39 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(10, 90);
+            this.label1.Location = new System.Drawing.Point(19, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 27);
             this.label1.TabIndex = 11;
             this.label1.Text = "Текущая цифра:";
             this.label1.UseMnemonic = false;
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(16, 231);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(599, 264);
+            this.panel2.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(640, 360);
+            this.ClientSize = new System.Drawing.Size(649, 532);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(15, 15);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.CurrentGameGroup.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel2;
+
+        private System.Windows.Forms.GroupBox CurrentGameGroup;
 
         private System.Windows.Forms.Label label2;
 
