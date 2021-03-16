@@ -83,7 +83,7 @@ namespace Homework_7
         //Прекращает игру
         private void menuStop_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("СТОП ИГРА!");
             lblGoal.Visible = false;
             lblGoalText.Visible = false;
         }
@@ -124,6 +124,11 @@ namespace Homework_7
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
             throw new System.NotImplementedException();
         }
