@@ -28,6 +28,8 @@ namespace Homework_7
             lblGoal.Visible = false;
             lblGoalText.Visible = false;
             lblStepsCount.Text = "0";
+            groupBox1.Hide();
+
         }
 
         //Обновление формы
