@@ -40,9 +40,9 @@
             this.menu_stop = new System.Windows.Forms.Button();
             this.menu_cancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -117,7 +117,7 @@
             // 
             // menu_start
             // 
-            this.menu_start.Location = new System.Drawing.Point(0, 0);
+            this.menu_start.Location = new System.Drawing.Point(3, 0);
             this.menu_start.Name = "menu_start";
             this.menu_start.Size = new System.Drawing.Size(76, 25);
             this.menu_start.TabIndex = 8;
@@ -162,6 +162,20 @@
             this.panel1.Size = new System.Drawing.Size(603, 324);
             this.panel1.TabIndex = 7;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.PowderBlue;
+            this.groupBox1.Controls.Add(this.btnCommand2);
+            this.groupBox1.Controls.Add(this.btnReset);
+            this.groupBox1.Controls.Add(this.btnCommand1);
+            this.groupBox1.Location = new System.Drawing.Point(243, 123);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(275, 64);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
             // label2
             // 
             this.label2.Location = new System.Drawing.Point(14, 123);
@@ -179,24 +193,11 @@
             this.label1.Text = "Текущая цифра:";
             this.label1.UseMnemonic = false;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnCommand2);
-            this.groupBox1.Controls.Add(this.btnReset);
-            this.groupBox1.Controls.Add(this.btnCommand1);
-            this.groupBox1.Location = new System.Drawing.Point(243, 123);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(275, 64);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(640, 360);
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(15, 15);
