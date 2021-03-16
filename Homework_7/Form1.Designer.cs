@@ -82,7 +82,7 @@
             // 
             // lblNumber
             // 
-            this.lblNumber.Location = new System.Drawing.Point(122, 90);
+            this.lblNumber.Location = new System.Drawing.Point(138, 89);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(47, 38);
             this.lblNumber.TabIndex = 3;
@@ -90,7 +90,7 @@
             // 
             // lblGoal
             // 
-            this.lblGoal.Location = new System.Drawing.Point(105, 63);
+            this.lblGoal.Location = new System.Drawing.Point(121, 62);
             this.lblGoal.Name = "lblGoal";
             this.lblGoal.Size = new System.Drawing.Size(62, 27);
             this.lblGoal.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             // lblGoalText
             // 
-            this.lblGoalText.Location = new System.Drawing.Point(3, 63);
+            this.lblGoalText.Location = new System.Drawing.Point(19, 62);
             this.lblGoalText.Name = "lblGoalText";
             this.lblGoalText.Size = new System.Drawing.Size(96, 27);
             this.lblGoalText.TabIndex = 5;
@@ -108,7 +108,7 @@
             // 
             // lblStepsCount
             // 
-            this.lblStepsCount.Location = new System.Drawing.Point(114, 128);
+            this.lblStepsCount.Location = new System.Drawing.Point(130, 127);
             this.lblStepsCount.Name = "lblStepsCount";
             this.lblStepsCount.Size = new System.Drawing.Size(45, 22);
             this.lblStepsCount.TabIndex = 6;
@@ -148,15 +148,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.menu_cancel);
             this.panel1.Controls.Add(this.menu_stop);
             this.panel1.Controls.Add(this.menu_start);
-            this.panel1.Controls.Add(this.lblStepsCount);
-            this.panel1.Controls.Add(this.lblGoalText);
-            this.panel1.Controls.Add(this.lblGoal);
-            this.panel1.Controls.Add(this.lblNumber);
             this.panel1.Location = new System.Drawing.Point(12, 14);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 324);
@@ -166,11 +160,17 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PowderBlue;
             this.groupBox1.Controls.Add(this.btnCommand2);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnReset);
             this.groupBox1.Controls.Add(this.btnCommand1);
+            this.groupBox1.Controls.Add(this.lblNumber);
+            this.groupBox1.Controls.Add(this.lblGoal);
+            this.groupBox1.Controls.Add(this.lblStepsCount);
+            this.groupBox1.Controls.Add(this.lblGoalText);
             this.groupBox1.Location = new System.Drawing.Point(243, 123);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(275, 64);
+            this.groupBox1.Size = new System.Drawing.Size(332, 167);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -178,7 +178,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(14, 123);
+            this.label2.Location = new System.Drawing.Point(30, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 12;
@@ -186,7 +186,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(10, 90);
+            this.label1.Location = new System.Drawing.Point(26, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 27);
             this.label1.TabIndex = 11;

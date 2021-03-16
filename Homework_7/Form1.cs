@@ -72,6 +72,7 @@ namespace Homework_7
         private void menuStart_Click(object sender, EventArgs e)
         {
             doubler.GetGoal();
+            groupBox1.Show();
             MessageBox.Show($"Получите значение: {doubler.Goal}");
             lblGoal.Visible = true;
             lblGoalText.Visible = true;
@@ -84,6 +85,7 @@ namespace Homework_7
         private void menuStop_Click(object sender, EventArgs e)
         {
             MessageBox.Show("СТОП ИГРА!");
+            groupBox1.Hide();
             lblGoal.Visible = false;
             lblGoalText.Visible = false;
         }
@@ -130,7 +132,7 @@ namespace Homework_7
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
     }
 }
