@@ -11,14 +11,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/78/986aa936/Number.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B28F550-0D54-4E01-9E30-DCA09FAB36D7/3a/2b1a59e5/Form.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Homework_7/Doubler.cs" />
-      <option value="$PROJECT_DIR$/Homework_7/Form1.Designer.cs" />
       <option value="$PROJECT_DIR$/Homework_7/randNumber.cs" />
       <option value="$PROJECT_DIR$/Homework_7/Form1.cs" />
+      <option value="$PROJECT_DIR$/Homework_7/Form1.Designer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1phyU25FjumjaSpbq1LrZYDEaFS" />
@@ -28,6 +31,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34950384" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -77,5 +82,55 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Homework_7/Form1.cs</url>
+          <line>159</line>
+          <properties documentPath="D:\GeekBrains\Homework_7\Homework_7\Form1.cs" initialLine="159" containingFunctionPresentation="method 'btnCheck_Click'">
+            <startOffsets>
+              <option value="4561" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4631" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Homework_7/Form1.cs</url>
+          <line>170</line>
+          <properties documentPath="D:\GeekBrains\Homework_7\Homework_7\Form1.cs" initialLine="170" containingFunctionPresentation="method 'textBox_Click'">
+            <startOffsets>
+              <option value="4932" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4972" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Homework_7/Form1.cs</url>
+          <line>175</line>
+          <properties documentPath="D:\GeekBrains\Homework_7\Homework_7\Form1.cs" initialLine="175" containingFunctionPresentation="method 'Update1'">
+            <startOffsets>
+              <option value="5037" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5079" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#System.Windows.Forms.TextBox" memberName="Text" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

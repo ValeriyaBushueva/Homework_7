@@ -16,6 +16,7 @@ namespace Homework_7
     public partial class Form1 : Form
     {
        Doubler doubler;
+       private string textBoxString;
        
        //Task2
        randNumber rnum;
@@ -41,7 +42,7 @@ namespace Homework_7
             btnCheck.Text = "Проверить";
             this.Text = "Угадай число";
             lblStepCount.Text = "0";
-            tboxUserAnswer.Text = $"Введите число от 0 до {max}:";
+            Task2Header.Text = $"Введите число от 0 до {max}:";
             lblStepText.Text = "Счёт ходов:";
             MessageBox.Show("Вводите в поле число пока не угадаете. Нажимайте кнопку \"Проверить\" " +
                             "чтобы узнать результат попытки. ", "Правила");
@@ -153,18 +154,10 @@ namespace Homework_7
             //throw new System.NotImplementedException();
         }
         
-        
-        
-        
-      
-       
-           
-        
-
         private void btnCheck_Click(object sender, EventArgs e)
         {
             bool check;
-            MessageBox.Show(rnum.CheckValue(out check, int.Parse(tboxUserAnswer.Text)));
+            MessageBox.Show(rnum.CheckValue(out check, int.Parse(textBoxString)));
             if (check)
             {
                 rnum.Reset(max);
@@ -172,16 +165,16 @@ namespace Homework_7
             }
             Update1();
         }
-
+        
+        private void textBox_Click(object sender, EventArgs e)
+        {
+            textBoxString = ((TextBox) sender).Text;
+        }
+        
         void Update1()
         {
             lblStepCount.Text = rnum.Steps.ToString();
             this.Refresh();
-        }
-
-        private void lblEnterTheNumber_Click(object sender, EventArgs e)
-        {
-          //  throw new System.NotImplementedException();
         }
     }
     

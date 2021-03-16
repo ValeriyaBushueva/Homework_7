@@ -48,7 +48,7 @@
             this.tboxUserAnswer = new System.Windows.Forms.TextBox();
             this.lblStepCount = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Task2Header = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -209,38 +209,41 @@
             this.panel2.Controls.Add(this.tboxUserAnswer);
             this.panel2.Controls.Add(this.lblStepCount);
             this.panel2.Controls.Add(this.btnCheck);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(28, 271);
+            this.panel2.Controls.Add(this.Task2Header);
+            this.panel2.Location = new System.Drawing.Point(419, 14);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(574, 212);
+            this.panel2.Size = new System.Drawing.Size(206, 104);
             this.panel2.TabIndex = 8;
             // 
             // lblStepText
             // 
-            this.lblStepText.Location = new System.Drawing.Point(134, 12);
+            this.lblStepText.Location = new System.Drawing.Point(96, 31);
             this.lblStepText.Name = "lblStepText";
-            this.lblStepText.Size = new System.Drawing.Size(89, 26);
+            this.lblStepText.Size = new System.Drawing.Size(65, 26);
             this.lblStepText.TabIndex = 4;
             this.lblStepText.Text = "Счет ходов:";
             // 
             // tboxUserAnswer
             // 
-            this.tboxUserAnswer.Location = new System.Drawing.Point(13, 42);
+            this.tboxUserAnswer.AcceptsReturn = true;
+            this.tboxUserAnswer.Location = new System.Drawing.Point(6, 28);
+            this.tboxUserAnswer.MaxLength = 1000;
             this.tboxUserAnswer.Name = "tboxUserAnswer";
-            this.tboxUserAnswer.Size = new System.Drawing.Size(79, 20);
+            this.tboxUserAnswer.Size = new System.Drawing.Size(72, 20);
             this.tboxUserAnswer.TabIndex = 3;
+            this.tboxUserAnswer.TextChanged += new System.EventHandler(this.textBox_Click);
             // 
             // lblStepCount
             // 
-            this.lblStepCount.Location = new System.Drawing.Point(138, 45);
+            this.lblStepCount.Location = new System.Drawing.Point(158, 32);
             this.lblStepCount.Name = "lblStepCount";
-            this.lblStepCount.Size = new System.Drawing.Size(103, 24);
+            this.lblStepCount.Size = new System.Drawing.Size(27, 24);
             this.lblStepCount.TabIndex = 2;
             this.lblStepCount.Text = "0";
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(9, 72);
+            this.btnCheck.Location = new System.Drawing.Point(3, 54);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(93, 28);
             this.btnCheck.TabIndex = 1;
@@ -248,20 +251,20 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
-            // label3
+            // Task2Header
             // 
-            this.label3.Location = new System.Drawing.Point(6, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 30);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Угадай число!";
+            this.Task2Header.Location = new System.Drawing.Point(6, 9);
+            this.Task2Header.Name = "Task2Header";
+            this.Task2Header.Size = new System.Drawing.Size(155, 16);
+            this.Task2Header.TabIndex = 0;
+            this.Task2Header.Text = "Угадай число от 0 до 100!";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(715, 519);
+            this.ClientSize = new System.Drawing.Size(634, 230);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(15, 15);
@@ -282,7 +285,7 @@
 
         private System.Windows.Forms.Button btnCheck;
 
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Task2Header;
         private System.Windows.Forms.Panel panel2;
 
         private System.Windows.Forms.GroupBox groupBox1;
