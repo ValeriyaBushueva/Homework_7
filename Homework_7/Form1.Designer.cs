@@ -43,8 +43,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -156,7 +159,7 @@
             this.panel1.Controls.Add(this.menu_start);
             this.panel1.Location = new System.Drawing.Point(12, 14);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 324);
+            this.panel1.Size = new System.Drawing.Size(401, 211);
             this.panel1.TabIndex = 7;
             // 
             // groupBox1
@@ -196,20 +199,41 @@
             this.label1.Text = "Текущая цифра:";
             this.label1.UseMnemonic = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(28, 271);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(574, 212);
+            this.panel2.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(6, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 30);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Угадай число!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(356, 239);
+            this.ClientSize = new System.Drawing.Size(715, 519);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(15, 15);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
 
         private System.Windows.Forms.GroupBox groupBox1;
 
