@@ -1,0 +1,10 @@
+D:\GeekBrains\Homework_7\Homework_7\bin\Debug\Homework_7.exe.config
+D:\GeekBrains\Homework_7\Homework_7\bin\Debug\Homework_7.exe
+D:\GeekBrains\Homework_7\Homework_7\bin\Debug\Homework_7.pdb
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.csprojAssemblyReference.cache
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.Properties.Resources.resources
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.csproj.GenerateResource.cache
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.csproj.CoreCompileInputs.cache
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.exe
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.pdb
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.Form1.resources
