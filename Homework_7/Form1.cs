@@ -16,6 +16,10 @@ namespace Homework_7
     public partial class Form1 : Form
     {
        Doubler doubler;
+       
+       //Task2
+       randNumber rnum;
+       int max;
         public Form1()
         {
             doubler = new Doubler();
@@ -29,6 +33,18 @@ namespace Homework_7
             lblGoalText.Visible = false;
             lblStepsCount.Text = "0";
             groupBox1.Hide();
+            // Task 2
+            
+            max = 100;
+            rnum = new randNumber(max);
+            InitializeComponent();
+            btnCheck.Text = "Проверить";
+            this.Text = "Угадай число";
+            lblStepCount.Text = "0";
+            tboxUserAnswer.Text = $"Введите число от 0 до {max}:";
+            lblStepText.Text = "Счёт ходов:";
+            MessageBox.Show("Вводите в поле число пока не угадаете. Нажимайте кнопку \"Проверить\" " +
+                            "чтобы узнать результат попытки. ", "Правила");
 
         }
 
@@ -136,6 +152,41 @@ namespace Homework_7
         {
             //throw new System.NotImplementedException();
         }
+        
+        
+        
+        
+      
+       
+           
+        
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            bool check;
+            MessageBox.Show(rnum.CheckValue(out check, int.Parse(tboxUserAnswer.Text)));
+            if (check)
+            {
+                rnum.Reset(max);
+                MessageBox.Show($"Игра началась заново.\nВведите число от 0 до {max}:");
+            }
+            Update1();
+        }
+
+        void Update1()
+        {
+            lblStepCount.Text = rnum.Steps.ToString();
+            this.Refresh();
+        }
+
+        private void lblEnterTheNumber_Click(object sender, EventArgs e)
+        {
+          //  throw new System.NotImplementedException();
+        }
     }
+    
+    
+    
+    
 }
 

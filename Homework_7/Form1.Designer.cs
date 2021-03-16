@@ -44,6 +44,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblStepText = new System.Windows.Forms.Label();
+            this.tboxUserAnswer = new System.Windows.Forms.TextBox();
+            this.lblStepCount = new System.Windows.Forms.Label();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -201,11 +205,48 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblStepText);
+            this.panel2.Controls.Add(this.tboxUserAnswer);
+            this.panel2.Controls.Add(this.lblStepCount);
+            this.panel2.Controls.Add(this.btnCheck);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(28, 271);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(574, 212);
             this.panel2.TabIndex = 8;
+            // 
+            // lblStepText
+            // 
+            this.lblStepText.Location = new System.Drawing.Point(134, 12);
+            this.lblStepText.Name = "lblStepText";
+            this.lblStepText.Size = new System.Drawing.Size(89, 26);
+            this.lblStepText.TabIndex = 4;
+            this.lblStepText.Text = "Счет ходов:";
+            // 
+            // tboxUserAnswer
+            // 
+            this.tboxUserAnswer.Location = new System.Drawing.Point(13, 42);
+            this.tboxUserAnswer.Name = "tboxUserAnswer";
+            this.tboxUserAnswer.Size = new System.Drawing.Size(79, 20);
+            this.tboxUserAnswer.TabIndex = 3;
+            // 
+            // lblStepCount
+            // 
+            this.lblStepCount.Location = new System.Drawing.Point(138, 45);
+            this.lblStepCount.Name = "lblStepCount";
+            this.lblStepCount.Size = new System.Drawing.Size(103, 24);
+            this.lblStepCount.TabIndex = 2;
+            this.lblStepCount.Text = "0";
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(9, 72);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(93, 28);
+            this.btnCheck.TabIndex = 1;
+            this.btnCheck.Text = "Проверить!";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // label3
             // 
@@ -229,8 +270,17 @@
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label lblStepText;
+
+        private System.Windows.Forms.TextBox tboxUserAnswer;
+
+        private System.Windows.Forms.Label lblStepCount;
+
+        private System.Windows.Forms.Button btnCheck;
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
