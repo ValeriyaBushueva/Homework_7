@@ -22,14 +22,14 @@ namespace Homework_7
         {
             //Task1
             InitializeComponent();
-            btnCommand1.Text = "+1";
-            btnCommand2.Text = "x2";
-            lblNumber.Text = "0";
-            btnReset.Text = "Сброс";
+            Task1_AddOneButton.Text = "+1";
+            Task1_Multiply2Button.Text = "x2";
+            Task1_CurrentNumberLabel.Text = "0";
+            Task1_ResetButton.Text = "Сброс";
             this.Text = "Удвоитель";
-            lblGoal.Visible = false;
+            Task1_TargetLabel.Visible = false;
             lblGoalText.Visible = false;
-            lblStepsCount.Text = "0";
+            Task1_StepsCountLabel.Text = "0";
             groupBox1.Hide();
             MakeNumberGame_Start();
             
@@ -42,14 +42,14 @@ namespace Homework_7
         //Обновление формы
         public void Update()
         {
-            lblNumber.Text = doubler.Value.ToString();
-            lblStepsCount.Text = doubler.Steps.ToString();
+            Task1_CurrentNumberLabel.Text = doubler.Value.ToString();
+            Task1_StepsCountLabel.Text = doubler.Steps.ToString();
             this.Refresh();
-            if (lblGoal.Visible)
+            if (Task1_TargetLabel.Visible)
                 if (doubler.CheckGoal())
                 {
                     MessageBox.Show($"Поздравляем, вы достигли заданного числа за {doubler.Steps} ходов");
-                    lblGoal.Visible = false;
+                    Task1_TargetLabel.Visible = false;
                     lblGoalText.Visible = false;
                     doubler.Reset();
                 }
@@ -59,22 +59,19 @@ namespace Homework_7
         //Увеличение текущего значения на единицу
         private void btnCommand1_Click(object sender, EventArgs e)
         {
-            doubler.AddOne();
-            Update();
+            MakeNumberGame_AddOne();
         }
 
         //Увеличение текущего значения вдвое
         private void btnCommand2_Click(object sender, EventArgs e)
         {
-            doubler.Multiply2();
-            Update();
+            MakeNumberGame_MultiplyBy2();
         }
 
         //Сброс текущего значения и счётчика
         private void btnReset_Click(object sender, EventArgs e)
         {
-            doubler.Reset();
-            Update();
+
         }
 
         //Начинает игру
@@ -83,9 +80,9 @@ namespace Homework_7
             doubler.GetGoal();
             groupBox1.Show();
             MessageBox.Show($"Получите значение: {doubler.Goal}");
-            lblGoal.Visible = true;
+            Task1_TargetLabel.Visible = true;
             lblGoalText.Visible = true;
-            lblGoal.Text = doubler.Goal.ToString();
+            Task1_TargetLabel.Text = doubler.Goal.ToString();
             doubler.Reset();
             Update();
         }
@@ -95,7 +92,7 @@ namespace Homework_7
         {
             MessageBox.Show("СТОП ИГРА!");
             groupBox1.Hide();
-            lblGoal.Visible = false;
+            Task1_TargetLabel.Visible = false;
             lblGoalText.Visible = false;
         }
 
@@ -104,8 +101,6 @@ namespace Homework_7
         private void menuCancel_Click(object sender, EventArgs e)
         {
             doubler.CheckStack();
-            
-
             Update();
         }
 

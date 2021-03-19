@@ -6,28 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fc53d0b-89a6-4157-918d-565bf26b0e71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_7/FormTask.Task2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task2/randNumber.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/Doubler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/Doubler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/Homework_7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/Homework_7.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/bin/Debug/Homework_7.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/bin/Debug/Homework_7.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/bin/Debug/Homework_7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/bin/Debug/Homework_7.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.Form1.resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/obj/Debug/Homework_7.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7/randNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/GuessNumber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_7/FormTask.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_7/FormTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2/obj/Debug/Task2.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Task2/obj/Debug/Task2.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +39,10 @@
       <option value="$PROJECT_DIR$/Homework_7/FormTask1.Designer.cs" />
       <option value="$PROJECT_DIR$/Homework_7/GuessNumber.cs" />
       <option value="$PROJECT_DIR$/Homework_7/FormTask1.cs" />
-      <option value="$PROJECT_DIR$/Homework_7/FormTask.cs" />
-      <option value="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" />
       <option value="$PROJECT_DIR$/Homework_7/Doubler.cs" />
       <option value="$PROJECT_DIR$/Homework_7/FormTask.Task2.cs" />
+      <option value="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" />
+      <option value="$PROJECT_DIR$/Homework_7/FormTask.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1phyU25FjumjaSpbq1LrZYDEaFS" />
@@ -129,6 +112,7 @@
       <workItem from="1616155102930" duration="3000" />
       <workItem from="1616155183927" duration="659000" />
       <workItem from="1616176287923" duration="2256000" />
+      <workItem from="1616180842060" duration="832000" />
     </task>
     <servers />
   </component>

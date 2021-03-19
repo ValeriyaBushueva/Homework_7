@@ -17,7 +17,20 @@
 
         private void MakeNumberGame_MultiplyBy2()
         {
-            
+            doubler.Multiply2();
+            Update();
         }
+        
+        // private void MakeNumberGame_Reset()
+        // {
+        //     doubler.Multiply2();
+        //     Update();
+        // }
+        //
+        // private void MakeNumberGame_Reset()
+        // {
+        //     doubler.Multiply2();
+        //     Update();
+        // }
     }
 }

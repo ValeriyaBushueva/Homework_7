@@ -29,25 +29,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnCommand2 = new System.Windows.Forms.Button();
-            this.btnCommand1 = new System.Windows.Forms.Button();
-            this.lblNumber = new System.Windows.Forms.Label();
-            this.lblGoal = new System.Windows.Forms.Label();
+            this.Task1_ResetButton = new System.Windows.Forms.Button();
+            this.Task1_Multiply2Button = new System.Windows.Forms.Button();
+            this.Task1_AddOneButton = new System.Windows.Forms.Button();
+            this.Task1_CurrentNumberLabel = new System.Windows.Forms.Label();
+            this.Task1_TargetLabel = new System.Windows.Forms.Label();
             this.lblGoalText = new System.Windows.Forms.Label();
-            this.lblStepsCount = new System.Windows.Forms.Label();
-            this.menu_start = new System.Windows.Forms.Button();
-            this.menu_stop = new System.Windows.Forms.Button();
-            this.menu_cancel = new System.Windows.Forms.Button();
+            this.Task1_StepsCountLabel = new System.Windows.Forms.Label();
+            this.Task1_StartButton = new System.Windows.Forms.Button();
+            this.Task1_StopButton = new System.Windows.Forms.Button();
+            this.Task1_CancelButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblStepText = new System.Windows.Forms.Label();
-            this.tboxUserAnswer = new System.Windows.Forms.TextBox();
+            this.Task2_TextBox = new System.Windows.Forms.TextBox();
             this.lblStepCount = new System.Windows.Forms.Label();
-            this.btnCheck = new System.Windows.Forms.Button();
+            this.Task2_CheckButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,54 +56,54 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnReset
+            // Task1_ResetButton
             // 
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.btnReset.Location = new System.Drawing.Point(91, 25);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(83, 27);
-            this.btnReset.TabIndex = 0;
-            this.btnReset.Text = "Сброс";
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.Task1_ResetButton.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
+            this.Task1_ResetButton.Location = new System.Drawing.Point(91, 25);
+            this.Task1_ResetButton.Name = "Task1_ResetButton";
+            this.Task1_ResetButton.Size = new System.Drawing.Size(83, 27);
+            this.Task1_ResetButton.TabIndex = 0;
+            this.Task1_ResetButton.Text = "Сброс";
+            this.Task1_ResetButton.UseVisualStyleBackColor = false;
+            this.Task1_ResetButton.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // btnCommand2
+            // Task1_Multiply2Button
             // 
-            this.btnCommand2.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.btnCommand2.Location = new System.Drawing.Point(2, 25);
-            this.btnCommand2.Name = "btnCommand2";
-            this.btnCommand2.Size = new System.Drawing.Size(83, 26);
-            this.btnCommand2.TabIndex = 1;
-            this.btnCommand2.Text = "*2\r\n";
-            this.btnCommand2.UseVisualStyleBackColor = false;
-            this.btnCommand2.Click += new System.EventHandler(this.btnCommand2_Click);
+            this.Task1_Multiply2Button.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
+            this.Task1_Multiply2Button.Location = new System.Drawing.Point(2, 25);
+            this.Task1_Multiply2Button.Name = "Task1_Multiply2Button";
+            this.Task1_Multiply2Button.Size = new System.Drawing.Size(83, 26);
+            this.Task1_Multiply2Button.TabIndex = 1;
+            this.Task1_Multiply2Button.Text = "*2\r\n";
+            this.Task1_Multiply2Button.UseVisualStyleBackColor = false;
+            this.Task1_Multiply2Button.Click += new System.EventHandler(this.btnCommand2_Click);
             // 
-            // btnCommand1
+            // Task1_AddOneButton
             // 
-            this.btnCommand1.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.btnCommand1.Location = new System.Drawing.Point(180, 24);
-            this.btnCommand1.Name = "btnCommand1";
-            this.btnCommand1.Size = new System.Drawing.Size(83, 29);
-            this.btnCommand1.TabIndex = 2;
-            this.btnCommand1.Text = "+1";
-            this.btnCommand1.UseVisualStyleBackColor = false;
-            this.btnCommand1.Click += new System.EventHandler(this.btnCommand1_Click);
+            this.Task1_AddOneButton.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
+            this.Task1_AddOneButton.Location = new System.Drawing.Point(180, 24);
+            this.Task1_AddOneButton.Name = "Task1_AddOneButton";
+            this.Task1_AddOneButton.Size = new System.Drawing.Size(83, 29);
+            this.Task1_AddOneButton.TabIndex = 2;
+            this.Task1_AddOneButton.Text = "+1";
+            this.Task1_AddOneButton.UseVisualStyleBackColor = false;
+            this.Task1_AddOneButton.Click += new System.EventHandler(this.btnCommand1_Click);
             // 
-            // lblNumber
+            // Task1_CurrentNumberLabel
             // 
-            this.lblNumber.Location = new System.Drawing.Point(138, 89);
-            this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(47, 38);
-            this.lblNumber.TabIndex = 3;
-            this.lblNumber.Text = "0";
+            this.Task1_CurrentNumberLabel.Location = new System.Drawing.Point(138, 89);
+            this.Task1_CurrentNumberLabel.Name = "Task1_CurrentNumberLabel";
+            this.Task1_CurrentNumberLabel.Size = new System.Drawing.Size(47, 16);
+            this.Task1_CurrentNumberLabel.TabIndex = 3;
+            this.Task1_CurrentNumberLabel.Text = "0";
             // 
-            // lblGoal
+            // Task1_TargetLabel
             // 
-            this.lblGoal.Location = new System.Drawing.Point(121, 62);
-            this.lblGoal.Name = "lblGoal";
-            this.lblGoal.Size = new System.Drawing.Size(62, 27);
-            this.lblGoal.TabIndex = 4;
-            this.lblGoal.Text = "Цель";
+            this.Task1_TargetLabel.Location = new System.Drawing.Point(121, 62);
+            this.Task1_TargetLabel.Name = "Task1_TargetLabel";
+            this.Task1_TargetLabel.Size = new System.Drawing.Size(62, 27);
+            this.Task1_TargetLabel.TabIndex = 4;
+            this.Task1_TargetLabel.Text = "Цель";
             // 
             // lblGoalText
             // 
@@ -114,80 +114,80 @@
             this.lblGoalText.Text = "Победная цифра:";
             this.lblGoalText.UseMnemonic = false;
             // 
-            // lblStepsCount
+            // Task1_StepsCountLabel
             // 
-            this.lblStepsCount.Location = new System.Drawing.Point(130, 127);
-            this.lblStepsCount.Name = "lblStepsCount";
-            this.lblStepsCount.Size = new System.Drawing.Size(45, 22);
-            this.lblStepsCount.TabIndex = 6;
-            this.lblStepsCount.Text = "0";
+            this.Task1_StepsCountLabel.Location = new System.Drawing.Point(138, 113);
+            this.Task1_StepsCountLabel.Name = "Task1_StepsCountLabel";
+            this.Task1_StepsCountLabel.Size = new System.Drawing.Size(45, 14);
+            this.Task1_StepsCountLabel.TabIndex = 6;
+            this.Task1_StepsCountLabel.Text = "0";
             // 
-            // menu_start
+            // Task1_StartButton
             // 
-            this.menu_start.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.menu_start.Location = new System.Drawing.Point(3, 0);
-            this.menu_start.Name = "menu_start";
-            this.menu_start.Size = new System.Drawing.Size(76, 25);
-            this.menu_start.TabIndex = 8;
-            this.menu_start.Text = "Старт";
-            this.menu_start.UseVisualStyleBackColor = false;
-            this.menu_start.Click += new System.EventHandler(this.menuStart_Click);
+            this.Task1_StartButton.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
+            this.Task1_StartButton.Location = new System.Drawing.Point(3, 0);
+            this.Task1_StartButton.Name = "Task1_StartButton";
+            this.Task1_StartButton.Size = new System.Drawing.Size(76, 25);
+            this.Task1_StartButton.TabIndex = 8;
+            this.Task1_StartButton.Text = "Старт";
+            this.Task1_StartButton.UseVisualStyleBackColor = false;
+            this.Task1_StartButton.Click += new System.EventHandler(this.menuStart_Click);
             // 
-            // menu_stop
+            // Task1_StopButton
             // 
-            this.menu_stop.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.menu_stop.Location = new System.Drawing.Point(93, -1);
-            this.menu_stop.Name = "menu_stop";
-            this.menu_stop.Size = new System.Drawing.Size(76, 27);
-            this.menu_stop.TabIndex = 9;
-            this.menu_stop.Text = "Стоп";
-            this.menu_stop.UseVisualStyleBackColor = false;
-            this.menu_stop.Click += new System.EventHandler(this.menuStop_Click);
+            this.Task1_StopButton.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
+            this.Task1_StopButton.Location = new System.Drawing.Point(93, -1);
+            this.Task1_StopButton.Name = "Task1_StopButton";
+            this.Task1_StopButton.Size = new System.Drawing.Size(76, 27);
+            this.Task1_StopButton.TabIndex = 9;
+            this.Task1_StopButton.Text = "Стоп";
+            this.Task1_StopButton.UseVisualStyleBackColor = false;
+            this.Task1_StopButton.Click += new System.EventHandler(this.menuStop_Click);
             // 
-            // menu_cancel
+            // Task1_CancelButton
             // 
-            this.menu_cancel.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.menu_cancel.Location = new System.Drawing.Point(182, -1);
-            this.menu_cancel.Name = "menu_cancel";
-            this.menu_cancel.Size = new System.Drawing.Size(106, 26);
-            this.menu_cancel.TabIndex = 10;
-            this.menu_cancel.Text = "Отменить шаг";
-            this.menu_cancel.UseVisualStyleBackColor = false;
-            this.menu_cancel.Click += new System.EventHandler(this.menuCancel_Click);
+            this.Task1_CancelButton.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
+            this.Task1_CancelButton.Location = new System.Drawing.Point(182, -1);
+            this.Task1_CancelButton.Name = "Task1_CancelButton";
+            this.Task1_CancelButton.Size = new System.Drawing.Size(106, 26);
+            this.Task1_CancelButton.TabIndex = 10;
+            this.Task1_CancelButton.Text = "Отменить шаг";
+            this.Task1_CancelButton.UseVisualStyleBackColor = false;
+            this.Task1_CancelButton.Click += new System.EventHandler(this.menuCancel_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.menu_cancel);
-            this.panel1.Controls.Add(this.menu_stop);
-            this.panel1.Controls.Add(this.menu_start);
+            this.panel1.Controls.Add(this.Task1_CancelButton);
+            this.panel1.Controls.Add(this.Task1_StopButton);
+            this.panel1.Controls.Add(this.Task1_StartButton);
             this.panel1.Location = new System.Drawing.Point(97, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(401, 213);
+            this.panel1.Size = new System.Drawing.Size(296, 177);
             this.panel1.TabIndex = 7;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PowderBlue;
-            this.groupBox1.Controls.Add(this.btnCommand2);
+            this.groupBox1.Controls.Add(this.Task1_Multiply2Button);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnReset);
-            this.groupBox1.Controls.Add(this.btnCommand1);
-            this.groupBox1.Controls.Add(this.lblNumber);
-            this.groupBox1.Controls.Add(this.lblGoal);
-            this.groupBox1.Controls.Add(this.lblStepsCount);
+            this.groupBox1.Controls.Add(this.Task1_ResetButton);
+            this.groupBox1.Controls.Add(this.Task1_AddOneButton);
+            this.groupBox1.Controls.Add(this.Task1_CurrentNumberLabel);
+            this.groupBox1.Controls.Add(this.Task1_TargetLabel);
+            this.groupBox1.Controls.Add(this.Task1_StepsCountLabel);
             this.groupBox1.Controls.Add(this.lblGoalText);
             this.groupBox1.Location = new System.Drawing.Point(3, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(332, 167);
+            this.groupBox1.Size = new System.Drawing.Size(285, 138);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Текущая игра";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(30, 122);
+            this.label2.Location = new System.Drawing.Point(25, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 12;
@@ -195,9 +195,9 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(26, 89);
+            this.label1.Location = new System.Drawing.Point(19, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 27);
+            this.label1.Size = new System.Drawing.Size(96, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "Текущая цифра:";
             this.label1.UseMnemonic = false;
@@ -205,13 +205,13 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lblStepText);
-            this.panel2.Controls.Add(this.tboxUserAnswer);
+            this.panel2.Controls.Add(this.Task2_TextBox);
             this.panel2.Controls.Add(this.lblStepCount);
-            this.panel2.Controls.Add(this.btnCheck);
+            this.panel2.Controls.Add(this.Task2_CheckButton);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(97, 234);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(401, 93);
+            this.panel2.Size = new System.Drawing.Size(296, 93);
             this.panel2.TabIndex = 8;
             // 
             // lblStepText
@@ -222,12 +222,12 @@
             this.lblStepText.TabIndex = 4;
             this.lblStepText.Text = "Счет ходов:";
             // 
-            // tboxUserAnswer
+            // Task2_TextBox
             // 
-            this.tboxUserAnswer.Location = new System.Drawing.Point(6, 29);
-            this.tboxUserAnswer.Name = "tboxUserAnswer";
-            this.tboxUserAnswer.Size = new System.Drawing.Size(79, 20);
-            this.tboxUserAnswer.TabIndex = 3;
+            this.Task2_TextBox.Location = new System.Drawing.Point(6, 29);
+            this.Task2_TextBox.Name = "Task2_TextBox";
+            this.Task2_TextBox.Size = new System.Drawing.Size(79, 20);
+            this.Task2_TextBox.TabIndex = 3;
             // 
             // lblStepCount
             // 
@@ -237,15 +237,15 @@
             this.lblStepCount.TabIndex = 2;
             this.lblStepCount.Text = "0";
             // 
-            // btnCheck
+            // Task2_CheckButton
             // 
-            this.btnCheck.Location = new System.Drawing.Point(3, 55);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(93, 28);
-            this.btnCheck.TabIndex = 1;
-            this.btnCheck.Text = "Проверить!";
-            this.btnCheck.UseVisualStyleBackColor = true;
-            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            this.Task2_CheckButton.Location = new System.Drawing.Point(3, 55);
+            this.Task2_CheckButton.Name = "Task2_CheckButton";
+            this.Task2_CheckButton.Size = new System.Drawing.Size(93, 28);
+            this.Task2_CheckButton.TabIndex = 1;
+            this.Task2_CheckButton.Text = "Проверить!";
+            this.Task2_CheckButton.UseVisualStyleBackColor = true;
+            this.Task2_CheckButton.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // label3
             // 
@@ -273,12 +273,12 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "TASK 2:";
             // 
-            // FormTask1
+            // FormTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(502, 331);
+            this.ClientSize = new System.Drawing.Size(395, 331);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
@@ -298,11 +298,11 @@
 
         private System.Windows.Forms.Label lblStepText;
 
-        private System.Windows.Forms.TextBox tboxUserAnswer;
+        private System.Windows.Forms.TextBox Task2_TextBox;
 
         private System.Windows.Forms.Label lblStepCount;
 
-        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Button Task2_CheckButton;
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
@@ -313,16 +313,16 @@
 
         private System.Windows.Forms.Label label1;
 
-        private System.Windows.Forms.Button btnCommand1;
-        private System.Windows.Forms.Button btnCommand2;
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Label lblGoal;
+        private System.Windows.Forms.Button Task1_AddOneButton;
+        private System.Windows.Forms.Button Task1_Multiply2Button;
+        private System.Windows.Forms.Button Task1_ResetButton;
+        private System.Windows.Forms.Label Task1_TargetLabel;
         private System.Windows.Forms.Label lblGoalText;
-        private System.Windows.Forms.Label lblNumber;
-        private System.Windows.Forms.Label lblStepsCount;
-        private System.Windows.Forms.Button menu_cancel;
-        private System.Windows.Forms.Button menu_start;
-        private System.Windows.Forms.Button menu_stop;
+        private System.Windows.Forms.Label Task1_CurrentNumberLabel;
+        private System.Windows.Forms.Label Task1_StepsCountLabel;
+        private System.Windows.Forms.Button Task1_CancelButton;
+        private System.Windows.Forms.Button Task1_StartButton;
+        private System.Windows.Forms.Button Task1_StopButton;
         private System.Windows.Forms.Panel panel1;
 
         private System.Windows.Forms.Button Menu;
