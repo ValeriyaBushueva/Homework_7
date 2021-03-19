@@ -13,16 +13,14 @@ using System.Windows.Forms;
 namespace Homework_7
 {
 
-    public partial class Form1 : Form
+    public partial class FormTask : Form
     {
-       Doubler doubler;
        
        //Task2
-       randNumber rnum;
-       int max;
-        public Form1()
+       
+        public FormTask()
         {
-            doubler = new Doubler();
+            //Task1
             InitializeComponent();
             btnCommand1.Text = "+1";
             btnCommand2.Text = "x2";
@@ -33,20 +31,13 @@ namespace Homework_7
             lblGoalText.Visible = false;
             lblStepsCount.Text = "0";
             groupBox1.Hide();
-            // Task 2
+            MakeNumberGame_Start();
             
-            max = 100;
-            rnum = new randNumber(max);
-            InitializeComponent();
-            btnCheck.Text = "Проверить";
-            this.Text = "Угадай число";
-            lblStepCount.Text = "0";
-            tboxUserAnswer.Text = $"Введите число от 0 до {max}:";
-            lblStepText.Text = "Счёт ходов:";
-            MessageBox.Show("Вводите в поле число пока не угадаете. Нажимайте кнопку \"Проверить\" " +
-                            "чтобы узнать результат попытки. ", "Правила");
-
+            // Task 2
+            GuessNumberGame_Start();
         }
+
+        
 
         //Обновление формы
         public void Update()
@@ -68,14 +59,14 @@ namespace Homework_7
         //Увеличение текущего значения на единицу
         private void btnCommand1_Click(object sender, EventArgs e)
         {
-            doubler.Increment();
+            doubler.AddOne();
             Update();
         }
 
         //Увеличение текущего значения вдвое
         private void btnCommand2_Click(object sender, EventArgs e)
         {
-            doubler.Double();
+            doubler.Multiply2();
             Update();
         }
 
@@ -118,75 +109,11 @@ namespace Homework_7
             Update();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //throw new System.NotImplementedException();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void lblGoal_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            //throw new System.NotImplementedException();
-        }
-        
-        
-        
-        
-      
-       
-           
-        
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            bool check;
-            MessageBox.Show(rnum.CheckValue(out check, int.Parse(tboxUserAnswer.Text)));
-            if (check)
-            {
-                rnum.Reset(max);
-                MessageBox.Show($"Игра началась заново.\nВведите число от 0 до {max}:");
-            }
-            Update1();
-        }
-
-        void Update1()
-        {
-            lblStepCount.Text = rnum.Steps.ToString();
-            this.Refresh();
-        }
-
-        private void lblEnterTheNumber_Click(object sender, EventArgs e)
-        {
-          //  throw new System.NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
-    
-    
-    
-    
 }
 

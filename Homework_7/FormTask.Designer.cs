@@ -1,6 +1,6 @@
 ﻿namespace Homework_7
 {
-    partial class Form1
+    partial class FormTask
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,8 @@
             this.lblStepCount = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -102,7 +104,6 @@
             this.lblGoal.Size = new System.Drawing.Size(62, 27);
             this.lblGoal.TabIndex = 4;
             this.lblGoal.Text = "Цель";
-            this.lblGoal.Click += new System.EventHandler(this.lblGoal_Click);
             // 
             // lblGoalText
             // 
@@ -120,7 +121,6 @@
             this.lblStepsCount.Size = new System.Drawing.Size(45, 22);
             this.lblStepsCount.TabIndex = 6;
             this.lblStepsCount.Text = "0";
-            this.lblStepsCount.Click += new System.EventHandler(this.label3_Click);
             // 
             // menu_start
             // 
@@ -161,9 +161,9 @@
             this.panel1.Controls.Add(this.menu_cancel);
             this.panel1.Controls.Add(this.menu_stop);
             this.panel1.Controls.Add(this.menu_start);
-            this.panel1.Location = new System.Drawing.Point(12, 14);
+            this.panel1.Location = new System.Drawing.Point(97, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(401, 211);
+            this.panel1.Size = new System.Drawing.Size(401, 213);
             this.panel1.TabIndex = 7;
             // 
             // groupBox1
@@ -184,7 +184,6 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Текущая игра";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label2
             // 
@@ -210,37 +209,37 @@
             this.panel2.Controls.Add(this.lblStepCount);
             this.panel2.Controls.Add(this.btnCheck);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(28, 271);
+            this.panel2.Location = new System.Drawing.Point(97, 234);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(574, 212);
+            this.panel2.Size = new System.Drawing.Size(401, 93);
             this.panel2.TabIndex = 8;
             // 
             // lblStepText
             // 
-            this.lblStepText.Location = new System.Drawing.Point(134, 12);
+            this.lblStepText.Location = new System.Drawing.Point(99, 9);
             this.lblStepText.Name = "lblStepText";
-            this.lblStepText.Size = new System.Drawing.Size(89, 26);
+            this.lblStepText.Size = new System.Drawing.Size(89, 18);
             this.lblStepText.TabIndex = 4;
             this.lblStepText.Text = "Счет ходов:";
             // 
             // tboxUserAnswer
             // 
-            this.tboxUserAnswer.Location = new System.Drawing.Point(13, 42);
+            this.tboxUserAnswer.Location = new System.Drawing.Point(6, 29);
             this.tboxUserAnswer.Name = "tboxUserAnswer";
             this.tboxUserAnswer.Size = new System.Drawing.Size(79, 20);
             this.tboxUserAnswer.TabIndex = 3;
             // 
             // lblStepCount
             // 
-            this.lblStepCount.Location = new System.Drawing.Point(138, 45);
+            this.lblStepCount.Location = new System.Drawing.Point(99, 27);
             this.lblStepCount.Name = "lblStepCount";
-            this.lblStepCount.Size = new System.Drawing.Size(103, 24);
+            this.lblStepCount.Size = new System.Drawing.Size(98, 22);
             this.lblStepCount.TabIndex = 2;
             this.lblStepCount.Text = "0";
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(9, 72);
+            this.btnCheck.Location = new System.Drawing.Point(3, 55);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(93, 28);
             this.btnCheck.TabIndex = 1;
@@ -256,23 +255,46 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Угадай число!";
             // 
-            // Form1
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.label4.Location = new System.Drawing.Point(7, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 27);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "TASK 1:";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.label5.Location = new System.Drawing.Point(7, 234);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 27);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "TASK 2:";
+            // 
+            // FormTask1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(715, 519);
+            this.ClientSize = new System.Drawing.Size(502, 331);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(15, 15);
-            this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "FormTask";
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label5;
+
+        private System.Windows.Forms.Label label4;
 
         private System.Windows.Forms.Label lblStepText;
 

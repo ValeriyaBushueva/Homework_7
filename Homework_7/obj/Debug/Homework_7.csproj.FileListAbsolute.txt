@@ -7,4 +7,4 @@ D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.csproj.GenerateResource
 D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.csproj.CoreCompileInputs.cache
 D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.exe
 D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.pdb
-D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.Form1.resources
+D:\GeekBrains\Homework_7\Homework_7\obj\Debug\Homework_7.FormTask1.resources

@@ -4,10 +4,10 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{6E57FBE8-56DD-4AAA-BBC7-5BB2A445FEF2}</ProjectGuid>
+        <ProjectGuid>{D3855A12-7ADE-4D79-B6D7-3241FAEDE28A}</ProjectGuid>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>Homework_7</RootNamespace>
-        <AssemblyName>Homework_7</AssemblyName>
+        <RootNamespace>Task2</RootNamespace>
+        <AssemblyName>Task2</AssemblyName>
         <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,21 +46,15 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Doubler.cs" />
-        <Compile Include="FormTask.Task1.cs" />
-        <Compile Include="FormTask.Task2.cs" />
-        <Compile Include="FormTask.cs">
+        <Compile Include="FormTask2.cs">
             <SubType>Form</SubType>
         </Compile>
-        <Compile Include="FormTask.Designer.cs">
-            <DependentUpon>FormTask.cs</DependentUpon>
+        <Compile Include="FormTask2.Designer.cs">
+            <DependentUpon>FormTask2.cs</DependentUpon>
         </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="GuessNumber.cs" />
-        <EmbeddedResource Include="FormTask.resx">
-          <DependentUpon>FormTask.cs</DependentUpon>
-        </EmbeddedResource>
+        <Compile Include="randNumber.cs" />
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>

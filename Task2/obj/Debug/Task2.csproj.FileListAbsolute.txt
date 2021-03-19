@@ -1,0 +1,9 @@
+D:\GeekBrains\Homework_7\Task2\obj\Debug\Task2.csprojAssemblyReference.cache
+D:\GeekBrains\Homework_7\Task2\obj\Debug\Task2.Properties.Resources.resources
+D:\GeekBrains\Homework_7\Task2\obj\Debug\Task2.csproj.GenerateResource.cache
+D:\GeekBrains\Homework_7\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+D:\GeekBrains\Homework_7\Task2\bin\Debug\Task2.exe.config
+D:\GeekBrains\Homework_7\Task2\bin\Debug\Task2.exe
+D:\GeekBrains\Homework_7\Task2\bin\Debug\Task2.pdb
+D:\GeekBrains\Homework_7\Task2\obj\Debug\Task2.exe
+D:\GeekBrains\Homework_7\Task2\obj\Debug\Task2.pdb
