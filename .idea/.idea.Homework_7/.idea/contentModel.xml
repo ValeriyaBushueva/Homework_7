@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Бушуев\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Бушуев\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Homework_7.432659483.00" t="ExcludeRecursive" />
+    <e p="D:\GeekBrains\Homework_7" t="IncludeFlat">
+      <e p="Homework_7" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Doubler.cs" t="Include" />
+        <e p="FormTask.cs" t="Include" />
+        <e p="FormTask.Designer.cs" t="Include" />
+        <e p="FormTask.resx" t="Include" />
+        <e p="FormTask.Task1.cs" t="Include" />
+        <e p="FormTask.Task2.cs" t="Include" />
+        <e p="GuessNumber.cs" t="Include" />
+        <e p="Homework_7.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+      </e>
+      <e p="Homework_7.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Task2" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FormTask2.cs" t="Include" />
+        <e p="FormTask2.Designer.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="randNumber.cs" t="Include" />
+        <e p="Task2.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
