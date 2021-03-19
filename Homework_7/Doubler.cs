@@ -33,15 +33,15 @@ namespace Homework_7
         }
 
         //Функция инкремента
-        public void Increment()
+        public void AddOne()
         {
             this.value++;
             this.steps++;
-            operations.Push(new reverseFunc(Decrement));
+            operations.Push(new reverseFunc(SubtractOne));
         }
 
         //Функция увеличеняи значения вдвое
-        public void Double()
+        public void Multiply2()
         {
             this.value *= 2;
             this.steps++;
@@ -49,7 +49,7 @@ namespace Homework_7
         }
 
         //Функция декремента
-        public void Decrement()
+        public void SubtractOne()
         {
             this.value--;
             this.steps--;
