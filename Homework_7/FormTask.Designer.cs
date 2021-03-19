@@ -46,7 +46,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblStepText = new System.Windows.Forms.Label();
             this.Task2_TextBox = new System.Windows.Forms.TextBox();
-            this.lblStepCount = new System.Windows.Forms.Label();
+            this.Task2_SepsLabel = new System.Windows.Forms.Label();
             this.Task2_CheckButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -59,13 +59,13 @@
             // Task1_ResetButton
             // 
             this.Task1_ResetButton.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.Task1_ResetButton.Location = new System.Drawing.Point(91, 25);
+            this.Task1_ResetButton.Location = new System.Drawing.Point(180, 26);
             this.Task1_ResetButton.Name = "Task1_ResetButton";
             this.Task1_ResetButton.Size = new System.Drawing.Size(83, 27);
             this.Task1_ResetButton.TabIndex = 0;
             this.Task1_ResetButton.Text = "Сброс";
             this.Task1_ResetButton.UseVisualStyleBackColor = false;
-            this.Task1_ResetButton.Click += new System.EventHandler(this.btnReset_Click);
+            this.Task1_ResetButton.Click += new System.EventHandler(this.Task1_ResetButton_Click);
             // 
             // Task1_Multiply2Button
             // 
@@ -76,18 +76,18 @@
             this.Task1_Multiply2Button.TabIndex = 1;
             this.Task1_Multiply2Button.Text = "*2\r\n";
             this.Task1_Multiply2Button.UseVisualStyleBackColor = false;
-            this.Task1_Multiply2Button.Click += new System.EventHandler(this.btnCommand2_Click);
+            this.Task1_Multiply2Button.Click += new System.EventHandler(this.Task1_Multiply2Button_Click);
             // 
             // Task1_AddOneButton
             // 
             this.Task1_AddOneButton.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (255)))), ((int) (((byte) (192)))));
-            this.Task1_AddOneButton.Location = new System.Drawing.Point(180, 24);
+            this.Task1_AddOneButton.Location = new System.Drawing.Point(91, 24);
             this.Task1_AddOneButton.Name = "Task1_AddOneButton";
             this.Task1_AddOneButton.Size = new System.Drawing.Size(83, 29);
             this.Task1_AddOneButton.TabIndex = 2;
             this.Task1_AddOneButton.Text = "+1";
             this.Task1_AddOneButton.UseVisualStyleBackColor = false;
-            this.Task1_AddOneButton.Click += new System.EventHandler(this.btnCommand1_Click);
+            this.Task1_AddOneButton.Click += new System.EventHandler(this.Task1_AddOneButton_Click);
             // 
             // Task1_CurrentNumberLabel
             // 
@@ -131,7 +131,7 @@
             this.Task1_StartButton.TabIndex = 8;
             this.Task1_StartButton.Text = "Старт";
             this.Task1_StartButton.UseVisualStyleBackColor = false;
-            this.Task1_StartButton.Click += new System.EventHandler(this.menuStart_Click);
+            this.Task1_StartButton.Click += new System.EventHandler(this.Task1_StartButton_Click);
             // 
             // Task1_StopButton
             // 
@@ -142,7 +142,7 @@
             this.Task1_StopButton.TabIndex = 9;
             this.Task1_StopButton.Text = "Стоп";
             this.Task1_StopButton.UseVisualStyleBackColor = false;
-            this.Task1_StopButton.Click += new System.EventHandler(this.menuStop_Click);
+            this.Task1_StopButton.Click += new System.EventHandler(this.Task1_StopButton_Click);
             // 
             // Task1_CancelButton
             // 
@@ -153,7 +153,7 @@
             this.Task1_CancelButton.TabIndex = 10;
             this.Task1_CancelButton.Text = "Отменить шаг";
             this.Task1_CancelButton.UseVisualStyleBackColor = false;
-            this.Task1_CancelButton.Click += new System.EventHandler(this.menuCancel_Click);
+            this.Task1_CancelButton.Click += new System.EventHandler(this.Task1_CancelButton_Click);
             // 
             // panel1
             // 
@@ -206,7 +206,7 @@
             // 
             this.panel2.Controls.Add(this.lblStepText);
             this.panel2.Controls.Add(this.Task2_TextBox);
-            this.panel2.Controls.Add(this.lblStepCount);
+            this.panel2.Controls.Add(this.Task2_SepsLabel);
             this.panel2.Controls.Add(this.Task2_CheckButton);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(97, 234);
@@ -228,14 +228,15 @@
             this.Task2_TextBox.Name = "Task2_TextBox";
             this.Task2_TextBox.Size = new System.Drawing.Size(79, 20);
             this.Task2_TextBox.TabIndex = 3;
+            this.Task2_TextBox.TextChanged += new System.EventHandler(this.Task2_TextBox_TextChanged);
             // 
-            // lblStepCount
+            // Task2_SepsLabel
             // 
-            this.lblStepCount.Location = new System.Drawing.Point(99, 27);
-            this.lblStepCount.Name = "lblStepCount";
-            this.lblStepCount.Size = new System.Drawing.Size(98, 22);
-            this.lblStepCount.TabIndex = 2;
-            this.lblStepCount.Text = "0";
+            this.Task2_SepsLabel.Location = new System.Drawing.Point(99, 27);
+            this.Task2_SepsLabel.Name = "Task2_SepsLabel";
+            this.Task2_SepsLabel.Size = new System.Drawing.Size(98, 22);
+            this.Task2_SepsLabel.TabIndex = 2;
+            this.Task2_SepsLabel.Text = "0";
             // 
             // Task2_CheckButton
             // 
@@ -245,7 +246,7 @@
             this.Task2_CheckButton.TabIndex = 1;
             this.Task2_CheckButton.Text = "Проверить!";
             this.Task2_CheckButton.UseVisualStyleBackColor = true;
-            this.Task2_CheckButton.Click += new System.EventHandler(this.btnCheck_Click);
+            this.Task2_CheckButton.Click += new System.EventHandler(this.Task2_CheckButton_Click);
             // 
             // label3
             // 
@@ -300,7 +301,7 @@
 
         private System.Windows.Forms.TextBox Task2_TextBox;
 
-        private System.Windows.Forms.Label lblStepCount;
+        private System.Windows.Forms.Label Task2_SepsLabel;
 
         private System.Windows.Forms.Button Task2_CheckButton;
 

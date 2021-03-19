@@ -9,8 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework_7/FormTask.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_7/FormTask.Task2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.Task2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework_7/FormTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7/FormTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task2/obj/Debug/Task2.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Task2/obj/Debug/Task2.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +40,10 @@
       <option value="$PROJECT_DIR$/Homework_7/GuessNumber.cs" />
       <option value="$PROJECT_DIR$/Homework_7/FormTask1.cs" />
       <option value="$PROJECT_DIR$/Homework_7/Doubler.cs" />
+      <option value="$PROJECT_DIR$/Homework_7/FormTask.Designer.cs" />
       <option value="$PROJECT_DIR$/Homework_7/FormTask.Task2.cs" />
-      <option value="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" />
       <option value="$PROJECT_DIR$/Homework_7/FormTask.cs" />
+      <option value="$PROJECT_DIR$/Homework_7/FormTask.Task1.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1phyU25FjumjaSpbq1LrZYDEaFS" />
@@ -112,7 +113,7 @@
       <workItem from="1616155102930" duration="3000" />
       <workItem from="1616155183927" duration="659000" />
       <workItem from="1616176287923" duration="2256000" />
-      <workItem from="1616180842060" duration="832000" />
+      <workItem from="1616180842060" duration="1939000" />
     </task>
     <servers />
   </component>
